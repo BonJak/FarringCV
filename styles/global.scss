@@ -1,0 +1,42 @@
+.sidebar {
+  background-color: #2b2e4a;
+
+  & .ant-menu {
+	background-color: inherit !important;
+  }
+
+  & a {
+	color: white;
+  }
+
+  & .ant-menu-item-selected {
+	& a {
+	  color: red; // selected menu color
+	}
+  }
+
+
+  & .logo {
+	margin-bottom: 7rem;
+  }
+}
+
+.about-me {
+  padding-top: 5rem;
+  display: flex;
+
+  &__card {
+	border-radius: 50px;
+
+	&--info {
+	  display: flex;
+	  flex-direction: column;
+	}
+  }
+
+}
+
+.about-icons {
+  font-size: 70px !important;
+  color: #902749 !important;
+}
