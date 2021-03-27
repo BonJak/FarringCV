@@ -6,10 +6,10 @@ import {Avatar as AntAvatar} from 'antd'
 const Avatar = (props) => {
 	return (
 		<div>
-			<AntAvatar size={200} icon={
+			<AntAvatar size={150} icon={
 				<Image
-					width={200}
-					height={200}
+					width={150}
+					height={150}
 					objectFit="cover"
 					src="/static/Farrin.JPG"/>
 			}/>

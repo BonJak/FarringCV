@@ -1,17 +1,32 @@
 .sidebar {
   background-color: #2b2e4a;
+  flex: 0 0 300px !important;
+  width: 300px !important;
+  max-width: 300px !important;
+  min-height: 2000px;
 }
 .sidebar .ant-menu {
   background-color: inherit !important;
 }
 .sidebar a {
+  font-size: 1.2rem;
   color: white;
 }
+.sidebar a:hover {
+  text-decoration: none;
+}
 .sidebar .ant-menu-item-selected a {
+  font-size: 1.2rem;
   color: red;
 }
+.sidebar .ant-menu-item-selected a:hover {
+  text-decoration: none;
+}
 .sidebar .logo {
+  text-align: center;
+  font-size: 1.7rem;
   margin-bottom: 7rem;
+  color: white;
 }
 
 .about-me {
@@ -19,16 +34,92 @@
   display: flex;
 }
 .about-me__card {
-  border-radius: 50px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px 0 rgba(69, 67, 96, 0.1);
+  margin-left: 2rem;
 }
 .about-me__card--info {
   display: flex;
   flex-direction: column;
 }
 
+.experience-card {
+  border-radius: 20px;
+  box-shadow: 0 5px 20px 0 rgba(69, 67, 96, 0.1) .experience-card -info;
+  box-shadow-padding: 40px;
+}
+
 .about-icons {
-  font-size: 70px !important;
+  font-size: 60px !important;
   color: #902749 !important;
+}
+
+.home {
+  padding: 50px 40px 40px;
+}
+
+.about__desc {
+  line-height: 200%;
+  padding: 1rem 2rem;
+}
+
+.card-container p {
+  margin: 0;
+}
+
+.card-container > .ant-tabs-card .ant-tabs-content {
+  height: 120px;
+  margin-top: -16px;
+}
+
+.card-container > .ant-tabs-card .ant-tabs-content > .ant-tabs-tabpane {
+  padding: 16px;
+  background: #fff;
+}
+
+.card-container > .ant-tabs-card > .ant-tabs-nav::before {
+  display: none;
+}
+
+.card-container > .ant-tabs-card .ant-tabs-tab,
+[data-theme=compact] .card-container > .ant-tabs-card .ant-tabs-tab {
+  background: transparent;
+  border-color: transparent;
+}
+
+.card-container > .ant-tabs-card .ant-tabs-tab-active,
+[data-theme=compact] .card-container > .ant-tabs-card .ant-tabs-tab-active {
+  background: #fff;
+  border-color: #fff;
+}
+
+#components-tabs-demo-card-top .code-box-demo {
+  padding: 24px;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+[data-theme=compact] .card-container > .ant-tabs-card .ant-tabs-content {
+  height: 120px;
+  margin-top: -8px;
+}
+
+[data-theme=dark] .card-container > .ant-tabs-card .ant-tabs-tab {
+  background: transparent;
+  border-color: transparent;
+}
+
+[data-theme=dark] #components-tabs-demo-card-top .code-box-demo {
+  background: #000;
+}
+
+[data-theme=dark] .card-container > .ant-tabs-card .ant-tabs-content > .ant-tabs-tabpane {
+  background: #141414;
+}
+
+[data-theme=dark] .card-container > .ant-tabs-card .ant-tabs-tab-active {
+  background: #141414;
+  border-color: #141414;
 }
 
 /*# sourceMappingURL=global.css.map */

@@ -1,6 +1,6 @@
 import React from 'react'
 import Avatar from "../Elements/Avatar";
-import {Card, Button} from 'antd'
+import {Card} from 'antd'
 import DownloadPDF from "../Elements/DownloadPDF";
 
 const AboutMe = () => {
@@ -13,7 +13,7 @@ const AboutMe = () => {
 						I am Farrin Marouf Sofian, a sophomore student in Computer Engineering at Koç University
 						Istanbul, Turkey. I dont know what else.
 					</p>
-					<div>
+					<div style={{textAlign:'center'}}>
 						<DownloadPDF/>
 					</div>
 				</div>

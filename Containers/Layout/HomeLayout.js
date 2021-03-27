@@ -7,7 +7,7 @@ const {Sider, Content} = Layout
 const HomeLayout = (props) => {
 
 	return (
-		<div style={{height: "100vh"}}>
+		<div style={{height: "100%"}}>
 			<Head>
 				<title>Farrin Marouf Sofian Portfolio App </title>
 				<meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
@@ -20,8 +20,8 @@ const HomeLayout = (props) => {
 				<meta name="description"
 				      content="Farrin Marouf Sofian Portfolio App. Computer Science and Web Development enthusiast"/>
 			</Head>
-			<Layout>
-				<Layout style={{height: '100vh'}}>
+			<Layout style={{height: '100%'}}>
+				<Layout style={{height: '100%'}}>
 					<Sider className="sidebar">
 						<Sidebar/>
 					</Sider>
