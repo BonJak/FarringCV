@@ -6,8 +6,8 @@ const SkillCard = ({cardData}) => {
 
 	return cardData.map((title, i) => {
 		return (
-			<Col sm={24} md={12} lg={6} key={i}>
-				<Card title={`${title.titleIdx}   ${title.titleText}`}>
+			<Col sm={24} md={12} lg={8} key={i}>
+				<Card className="skill-card__info" title={`${title.titleIdx}   ${title.titleText}`}>
 					Test
 				</Card>
 			</Col>

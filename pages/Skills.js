@@ -50,7 +50,7 @@ const Skills = (props) => {
 		},
 	]
 	return (
-		<Tabs className="skills-tab" animated type="card">
+		<Tabs className="skills-tab">
 			<TabPane tab={<div className="parent"><span className="hover hover-1">Skills</span></div>} key="1">
 				<Row gutter={[32, 32]}>
 					<SkillCard cardData={arrayOfTitles}/>

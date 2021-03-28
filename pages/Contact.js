@@ -24,15 +24,16 @@ const Contact = (props) => {
 		<div className="my-5 contact ">
 			{exists && getMessages(feedback, exists, 3)}
 			<Row justify="center">
-				<Col span={6}
+				<Col span={5} offset={2}
 				>
 					<div>
-
+						<h3>Get In Touch</h3>
+						<p>I would like to hear from you</p>
 					</div>
 				</Col>
-				<Col span={14}>
+				<Col span={12} offset={5}>
 					<form onSubmit={handleSubmit}>
-						<Input.Group>
+						<Input.Group size="large">
 							<Row className="my-2" gutter={8}>
 								<Col span={5}>
 									<Input onChange={(e) => setName(e.target.value)}
@@ -49,6 +50,7 @@ const Contact = (props) => {
 						<Row className="my-2" gutter={8}>
 							<Col span={17}>
 								<Input
+									size="large"
 									onChange={(e) => setSubject(e.target.value)}
 									value={subject}
 									className="z-depth-1a"
@@ -60,6 +62,11 @@ const Contact = (props) => {
 						<Row className="my-2" gutter={8}>
 							<Col span={17}>
 								<Input.TextArea
+									autoSize={{
+										minRows:5,
+										maxRows:8
+									}}
+									size="large"
 									onChange={(e) => setMessage(e.target.value)}
 									value={message}
 									className="z-depth-1a"
@@ -70,7 +77,7 @@ const Contact = (props) => {
 							</Col>
 						</Row>
 						<Row>
-							<Button htmlType='submit' type="danger" shape="round">
+							<Button size="large" htmlType='submit' type="danger" shape="round">
 								Send Message
 							</Button>
 						</Row>

@@ -18,7 +18,7 @@ export const useFeedback = (machine, asyncSignal, reload = false, redirect = '')
 			case 'loading':
 				feedback = {
 					state: circuit.state.value.open,
-					message: "Action In Progress"
+					message: "Please wait..."
 				}
 				break;
 			case 'success':
